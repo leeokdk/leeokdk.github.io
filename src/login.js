@@ -17,13 +17,6 @@ function onLoginSubmit(event) {
 function paintGreetings(username) {
   greeting.innerText = `Hello ${username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
-  addOutBtn();
-}
-
-function addOutBtn(){
-  const outbtn = document.createElement('button');
-  outbtn.setAttribute.innerText = 'Log Out';
-  greeting.appendChild(outbtn);
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
@@ -33,4 +26,5 @@ if (savedUsername === null) {
   loginForm.addEventListener("submit", onLoginSubmit);
 } else {
   paintGreetings(savedUsername);
+  loginForm.classList.add(HIDDEN_CLASSNAME);
 }

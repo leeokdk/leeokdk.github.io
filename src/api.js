@@ -1,7 +1,7 @@
 /*날씨와 위치 (geolocation)*/
 const weather = document.querySelector("#weather span:first-child");
 const city = document.querySelector("#weather span:last-child");
-const API_KEY = "241051bf13976dd3ddf8b8d9f247255e";
+const API_KEY = "67fbea478365c2db1f2137586494587e";
 
 function onGeoOk(position) {
   const lat = position.coords.latitude;
@@ -10,8 +10,8 @@ function onGeoOk(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      city.innerText = data.name;
-      weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+      city.innerText = `🌏 ${data.name}`;
+      weather.innerText = `⛅️ ${data.weather[0].description} / 🌡 ${data.main.temp}`;
     });
 }
 function onGeoError() {

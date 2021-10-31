@@ -4,6 +4,7 @@ const toDoInput = document.querySelector("#todo-form input");
 const toDoList = document.getElementById("todo-list");
 
 const TODOS_KEY = "todos";
+const USERS_KEY = "username";
 
 let toDos = [];
 

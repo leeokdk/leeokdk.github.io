@@ -1,5 +1,6 @@
 body{  
-    display: flex;
+    width: 100vh;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
     background-repeat : no-repeat;
@@ -17,8 +18,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
-    background-color: rgba( 255, 255, 255, 0.3 );
     font-size: 20vh;
 }
 
+#weather span{
+    width: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+#weather:last-child{
+    margin-bottom: 10vh;
+}
+
+.blur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    background-color: rgba( 255, 255, 255, 0.3 );
+}
