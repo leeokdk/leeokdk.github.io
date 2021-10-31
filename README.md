@@ -10,3 +10,6 @@ learn Nomad VanillaJS
 
 # deadline
 2021-10-31(sun)
+
+# review
+제출하긴 했지만 좀 .. 더 많이 다듬어야할듯..
